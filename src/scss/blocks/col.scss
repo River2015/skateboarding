@@ -1,9 +1,6 @@
 .row { width:100%; 
-display: -webkit-flex;
-display: -moz-flex;
-display: -ms-flex;
-display: -o-flex;
-display: flex;}
+display: flex;
+flex-wrap: wrap;}
 .row:after ,.clearfix:after {content:""; display: block; clear: both;}
 
 div[class*="column"] { box-sizing: border-box;}
