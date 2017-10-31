@@ -2,34 +2,24 @@
 	&__wrapper {
 		background-color: $text-color;
 	}
-	&__title {
-		text-transform: uppercase;
-		color: $tc-dark-grey;
-		font-size: $font-size + 8px;
+	&__category {
 		padding-top: 80px;
 		padding-bottom: 15px;
 	}
 	.item {
 		padding-bottom: 70px;
 		&__title {
-			color: #fff;
-			font-size: $font-size + 15px;
 			padding-bottom: 40px;
 		}
 		&__img {
 			width: 100%;
-
 		}
 	}
 	.selector {
 		display: flex;
 		flex-direction: column;
-		&__title  {
-			text-transform: uppercase;
-			color: $tc-dark-grey;
-			font-size: $font-size + 8px;
-			padding: 120px 0 25px 40px;
-			
+		&__category  {
+			padding: 120px 0 25px 40px;	
 		}
 		&__link {
 			color: $tc-w;
