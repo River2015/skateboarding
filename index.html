@@ -19,7 +19,9 @@
  <!-- Шапка -->
  <header>
    <div class="wrapper">
-     <div class="column1"><a href="#" class="logo-link"><img src="img/globe_logo.png" alt="scateboard_logo" class="logo"></a></div>
+     <div class="column1 logo">
+      <a href="#" class="logo__link">
+        <img src="img/globe_logo.png" alt="scateboard_logo" class="logo__img"></a></div>
      <div class="column9">
      <nav class="header-menu">
        <ul class="header-menu__list">
@@ -43,38 +45,37 @@
      </div>
     </div>
  </header>
- <!-- Промо -->
+ <!-- Промо  переделать на слайдер-->
  <section class="promo">
    <div class="wrapper wrapper--promo">
-    <div class="column8 promo__picture">
-      <img src="img/broken_road.jpg" alt="scate_on broken_road" class="promo__img">
+    <div class="column8 picture">
+      <img src="img/broken_road.jpg" alt="scate_on broken_road" class="picture__img">
     </div>
-    <div class="column4 promo__info">
-      <div class="row promo__article">
-        <div class="column12  promo__description">
-          <h3 class="promo__title">f e a t u r e s</h3>
-          <h2 class="promo__article-title">Reader's Choice Awards</h2>
-          <p class="promo__article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsam aspernatur amet minima vero officia.</p>
-          <a href="#" class="promo__link row-readmore">Read More</a>
+    <div class="column4 info">
+      <div class="column12  headline">
+        <h3 class="headline__category category">f e a t u r e s</h3>
+        <h2 class="headline__title title">Reader's Choice Awards</h2>
+        <p class="headline__article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsam aspernatur amet minima vero officia.</p>
+        <a href="#" class="headline__link row-readmore">Read More</a>
+      </div>
+      <div class="column12 rows">
+        <div class="column6 rows__item">
+          <a href="#" class="rows__prev">Prev</a> 
         </div>
-        <div class="column12 rows">
-          <div class="column6 rows__item">
-            <a href="#" class="rows__prev">Prev</a> 
-          </div>
-          <div class="column6 rows__item">
-            <a href="#" class="rows__next">Next</a>   
-          </div>
+        <div class="column6 rows__item">
+          <a href="#" class="rows__next">Next</a>   
         </div>
-       </div>
-     </div>
-   </div>
+      </div>
+    </div>
+   </div>  
  </section>
+ <!-- Публикации show all заменить на раскрывающийся список по скрипту -->
  <section class="stories">
-   <div class="wrapper">
+   <div class="wrapper stories__wrapper">
      <div class="container">
        <div class="row">
-         <h3 class="stories__title">Latest Stories</h3>
-         <form action="/" class="srories__selector">
+         <h3 class="subtitle subtitle--stories">Latest Stories</h3>
+         <form action="/" class="stories__selector">
           
           <select name="action" placeholder="Show All">
             <option value="" disabled selected>Show All</option>
@@ -86,45 +87,84 @@
           </select> 
          </form> 
        </div>
-       <div class="row stories__info">
+       <div class="row compilation">
          <div class="column4 item">
-            <div class="stories__inner">
+            <div class="item__inner">
               <img src="img/Scate_gallery_foto_1.jpg" alt="" class="item__img">
             </div>
             <p class="item__foto">21/01/2016</p>
-            <a href="#" class="stories__link row-readmore">Tony Hawk, Frontside Wallride </a></div>
+            <a href="#" class="item__link row-readmore">Tony Hawk, Frontside Wallride </a></div>
          <div class="column4 item">
-            <div class="stories__inner">
+            <div class="item__inner">
               <img src="img/Scate_gallery_foto2.jpg" alt="" class="item__img">
             </div>
             <p class="item__foto">21/01/2016</p>
-            <a href="#" class="stories__link row-readmore">Stephen Lawyer, Backside Kickflip</a></div>
+            <a href="#" class="item__link row-readmore">Stephen Lawyer, Backside Kickflip</a></div>
          <div class="column4 item">
-            <div class="stories__inner">
+            <div class="item__inner">
               <img src="img/Scate_gallery_foto3.jpg" alt="" class="item__img">
             </div>
             <p class="item__report">21/01/2016</p>
-            <a href="#" class="stories__link row-readmore">Agenda Product Preview: January 2017</a></div>
-         <div class="column8 item item--video">
+            <a href="#" class="item__link row-readmore">Agenda Product Preview: January 2017</a></div>
+         <div class="column8 item item--movie">
             <img src="img/Scate_gallery_video.jpg" alt="" class="item__img">
-            <div class="item__description">
-              <p class="item__video">v i d e o  d r o p </p>
-              <h4 class="item__title">Goseph Gil</h4>
-              <a href="#" class="stories__link row-readmore">Watch Now</a>
+            <div class="description">
+              <p class="description__video category">v i d e o  &nbsp;   d r o p </p>
+              <h4 class="description__title title">Joseph Gil</h4>
+              <a href="#" class="description__link row-readmore row-readmore--wight">Watch Now</a>
             </div>
-        </div>
+         </div>
          <div class="column4 item">
-            <div class="stories__inner">
+            <div class="item__inner">
               <img src="img/Scate_gallery_foto1.jpg" alt="" class="item__img">
             </div>
             <p class="item__foto">21/01/2016</p>
-            <a href="#" class="stories__link row-readmore">
-              Paul Shier, Frontside Boardslide</a></div>
+            <a href="#" class="item__link row-readmore">
+              Paul Shier, Frontside Boardslide</a>
+          </div>
+       </div>
+      <div class="row">
+        <div class="column12 more"><a href="#" class="more__link">Load More</a></div>
       </div>
      </div>
    </div>
  </section>
-
+ <!-- Интервью -->
+ <section class="interveiw">
+   <div class="wrapper interveiw__wrapper">
+     <div class="container">
+       <div class="row">
+         <div class="column12">
+           <h3 class="interveiw__category category">r e a l  &nbsp; t a l k</h3>
+         </div>
+         <div class="column8 item">
+           <h4 class="item__title title">Brad Rosado</h4>
+           <img src="img/talk.jpg" alt="" class="item__img">
+         </div>
+         <div class="column4 selector">
+           <h4 class="selector__category category">m o r e  &nbsp;  l i k e  &nbsp;  t h i s</h4>
+           <a href="" class="selector__link row-readmore">Real Talk: Jack Thompson</a>
+           <a href="" class="selector__link row-readmore">Real Talk: Brett Nichols</a>
+           <a href="" class="selector__link row-readmore">Real Talk: Jhonny Wilson</a>
+           <a href="" class="selector__allink">View All</a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+<!-- Журналы -->
+<section class="magazine">
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="column12">
+        
+        </div>
+        <div class="column12"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
