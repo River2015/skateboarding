@@ -1,0 +1,18 @@
+.card {
+	display: flex;
+
+	&__img {
+		height: 100%;
+		width: 100%;
+		padding-right: 70px;
+	}
+
+	&__img--small {
+		height: 490px;
+
+	}
+
+	&--small {
+	align-self: center;
+	}
+}

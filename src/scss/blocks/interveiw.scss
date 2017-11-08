@@ -18,23 +18,25 @@
 	.selector {
 		display: flex;
 		flex-direction: column;
+		justify-content: space-around;
+		height: 100%;
 		&__category  {
-			padding: 120px 0 25px 40px;	
+			padding: 120px 0 0 40px;	
 		}
 		&__link {
 			color: $tc-w;
 			padding-left: 40px;
 			padding-bottom: 20px;
 		}
+		&__innerlink {
+			margin-bottom: 70px;
+		}
 		&__allink {
 			color: $tc-w;
-			padding: 20px;
+			padding: 20px 40px 20px 40px;
 			border: 2px solid $tc-dark-grey;
 			margin-left: 50px;
-			text-align: center;
-			width: 120px;
-			margin-top: auto;
-			margin-bottom: 70px;
+			
 		}
 	}
 	.row-readmore:after {

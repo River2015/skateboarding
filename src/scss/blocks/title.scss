@@ -1,4 +1,8 @@
 .title {
 	font-size: $font-size + 35px;
 	color: $tc-w;
+	font-weight: bold;
+	&--dark {
+		color: $text-color;
+	}
 }

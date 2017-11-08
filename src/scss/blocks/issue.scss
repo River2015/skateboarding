@@ -1,0 +1,12 @@
+.issue {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	&__name {
+		font-weight: bold;
+	}
+	&__relevance {
+		font-size: $font-size + 35px;
+		color: $text-color;
+	}
+}
