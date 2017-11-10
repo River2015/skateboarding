@@ -1,7 +1,13 @@
+.issue-description{
+	
+	display: flex;
 .issue {
 	display: flex;
 	flex-direction: column;
 	align-self: center;
+	height: 490px;
+	justify-content: space-around;
+
 	&__name {
 		font-weight: bold;
 	}
@@ -9,4 +15,8 @@
 		font-size: $font-size + 35px;
 		color: $text-color;
 	}
+	&__description {
+		line-height: 1.5;
+	}
+}
 }

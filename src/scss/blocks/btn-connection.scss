@@ -1,0 +1,11 @@
+.btn-connection {
+	display: flex;
+	.btn {
+		background-color: $text-color;
+		color: $tc-w;
+		padding: 50px 90px 50px 90px;
+		border: 2px solid $tc-dark-grey; 
+		font-size: $font-size;
+		margin-top: 40px;
+	}
+}
